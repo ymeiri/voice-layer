@@ -86,7 +86,7 @@ Why this is not just a prompt:
 - **Consent-first calibration:** the agent asks before reading private sources.
 - **Channel-aware output:** PR comments, Slack replies, docs, RFCs, and email
   get different shapes from the same facts.
-- **AI-tell cleanup:** repeated model phrasing, filler, and punctuation tells
+- **Anti-slop cleanup:** repeated model phrasing, filler, and punctuation tells
   are explicitly checked.
 - **Not detector bypass:** voice-layer is for authentic personal communication,
   not evading AI detectors or hiding provenance.
@@ -124,7 +124,7 @@ voice + vibe + channel + audience + guardrails -> usable draft
   cultural or regional language into a costume.
 - **Documentation style:** design docs, RFCs, ADRs, runbooks, and wiki pages can
   preserve how the user structures context, alternatives, risks, and decisions.
-- **AI-tell cleanup:** the repo includes a public catalog of patterns that make
+- **Anti-slop cleanup:** the repo includes a public catalog of patterns that make
   AI writing sound fake: [AI_TELLS.md](AI_TELLS.md).
 - **Spec-first direction:** the profile model is documented in
   [VOICE_PROFILE_SPEC.md](VOICE_PROFILE_SPEC.md).
@@ -332,6 +332,8 @@ python3 -m unittest discover -s tests
 - [docs/evaluation.md](docs/evaluation.md): current evaluation tiers.
 - [docs/visual-identity.md](docs/visual-identity.md): logo, visual language,
   and Nano Banana prompt pack.
+- [docs/launch-playbook.md](docs/launch-playbook.md): launch channels, copy,
+  and public-posting guardrails.
 - [evals/behavior/scenarios.json](evals/behavior/scenarios.json): behavioral
   eval scenarios for writing, calibration, privacy, and audience adaptation.
 - [scripts/validate_profile.py](scripts/validate_profile.py): local voice profile
