@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">voice-layer README hero</title>
+  <desc id="desc">Generic AI draft transformed through a local voice-profile.md rewrite layer into PR, chat, and RFC outputs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0F14"/>
+      <stop offset="0.52" stop-color="#0D151A"/>
+      <stop offset="1" stop-color="#070A0F"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="52%">
+      <stop offset="0" stop-color="#22C55E" stop-opacity="0.30"/>
+      <stop offset="0.45" stop-color="#22C55E" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C2733"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="panelDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101923"/>
+      <stop offset="1" stop-color="#0C1118"/>
+    </linearGradient>
+    <linearGradient id="diffRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7F1D1D" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="diffGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#064E3B" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.46"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+    <filter id="softGlow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.77 0 0 0 0 0.37 0 0 0 0.72 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .label { fill: #F8FAFC; font: 700 34px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mutedLabel { fill: #94A3B8; font: 400 30px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .fileLabel { fill: #F8FAFC; font: 700 36px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .line { fill: #CBD5E1; opacity: 0.82; }
+      .lineMuted { fill: #7D8794; opacity: 0.55; }
+      .lineStrong { fill: #F8FAFC; opacity: 0.90; }
+      .strokePanel { stroke: #475569; stroke-width: 1.4; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="390" y="80" width="690" height="720" fill="url(#centerGlow)"/>
+  <path d="M0 146h1600M0 744h1600" stroke="#18212F" stroke-width="1" opacity="0.28"/>
+  <path d="M285 0v900M1115 0v900" stroke="#18212F" stroke-width="1" opacity="0.20"/>
+
+  <text x="72" y="282" class="mutedLabel">Generic AI draft</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="308" width="420" height="348" rx="10" fill="url(#panel)" class="strokePanel"/>
+    <path d="M72 308h420v48H72z" fill="#263241" opacity="0.72"/>
+    <circle cx="96" cy="332" r="8" fill="#64748B" opacity="0.72"/>
+    <circle cx="121" cy="332" r="8" fill="#64748B" opacity="0.72"/>
+    <circle cx="146" cy="332" r="8" fill="#64748B" opacity="0.72"/>
+    <rect x="102" y="392" width="134" height="12" rx="6" class="lineMuted"/>
+    <rect x="250" y="392" width="208" height="12" rx="6" class="lineMuted"/>
+    <rect x="102" y="424" width="266" height="12" rx="6" class="lineMuted"/>
+    <rect x="380" y="424" width="58" height="12" rx="6" class="lineMuted"/>
+    <rect x="102" y="456" width="304" height="12" rx="6" class="lineMuted"/>
+    <rect x="102" y="488" width="102" height="12" rx="6" class="lineMuted"/>
+    <rect x="102" y="520" width="128" height="12" rx="6" class="lineMuted"/>
+    <rect x="242" y="520" width="216" height="12" rx="6" class="lineMuted"/>
+    <rect x="102" y="552" width="246" height="12" rx="6" class="lineMuted"/>
+    <path d="M103 607l17 17-17 17" fill="none" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="132" y="636" width="16" height="3" rx="1.5" fill="#F8FAFC"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <path d="M526 482h56" stroke="#22C55E" stroke-width="5" stroke-linecap="round"/>
+    <path d="M559 459l25 25-25 25" fill="none" stroke="#22C55E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1115 482h56" stroke="#22C55E" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1148 459l25 25-25 25" fill="none" stroke="#22C55E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="620" y="248" width="496" height="460" rx="16" fill="#17212B" fill-opacity="0.54" stroke="#64748B" stroke-width="1.5"/>
+    <rect x="658" y="282" width="420" height="384" rx="12" fill="url(#panel)" class="strokePanel"/>
+    <path d="M658 282h420v88H658z" fill="#263241" opacity="0.58"/>
+    <rect x="1002" y="282" width="55" height="14" rx="7" fill="#F59E0B"/>
+    <text x="688" y="341" class="fileLabel">voice-profile.md</text>
+    <rect x="718" y="407" width="300" height="12" rx="6" class="line"/>
+    <rect x="658" y="432" width="420" height="65" fill="url(#diffRed)"/>
+    <text x="688" y="455" fill="#EF4444" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">-</text>
+    <rect x="718" y="445" width="260" height="12" rx="6" class="line"/>
+    <text x="688" y="488" fill="#EF4444" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">-</text>
+    <rect x="718" y="478" width="198" height="12" rx="6" class="line"/>
+    <rect x="658" y="520" width="420" height="70" fill="url(#diffGreen)"/>
+    <text x="688" y="548" fill="#22C55E" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">+</text>
+    <rect x="718" y="536" width="302" height="12" rx="6" fill="#22C55E"/>
+    <text x="688" y="581" fill="#22C55E" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">+</text>
+    <rect x="718" y="568" width="258" height="12" rx="6" fill="#22C55E"/>
+    <text x="688" y="620" fill="#EF4444" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">-</text>
+    <rect x="718" y="610" width="184" height="12" rx="6" class="line"/>
+    <text x="688" y="653" fill="#EF4444" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">-</text>
+    <rect x="718" y="643" width="224" height="12" rx="6" class="line"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="64" width="392" height="252" rx="12" fill="url(#panel)" class="strokePanel"/>
+    <path d="M1180 64h392v88h-392z" fill="#0E1722" opacity="0.78"/>
+    <text x="1210" y="124" class="label">PR comment</text>
+    <rect x="1210" y="188" width="310" height="12" rx="6" class="lineStrong"/>
+    <rect x="1210" y="220" width="250" height="12" rx="6" class="line"/>
+    <rect x="1210" y="252" width="285" height="12" rx="6" class="lineStrong"/>
+    <rect x="1210" y="284" width="190" height="12" rx="6" class="line"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="344" width="392" height="242" rx="12" fill="url(#panel)" class="strokePanel"/>
+    <path d="M1180 344h392v88h-392z" fill="#0E1722" opacity="0.78"/>
+    <text x="1210" y="404" class="label">Chat reply</text>
+    <rect x="1210" y="476" width="318" height="12" rx="6" class="lineStrong"/>
+    <rect x="1210" y="508" width="270" height="12" rx="6" class="line"/>
+    <rect x="1210" y="540" width="305" height="12" rx="6" class="lineStrong"/>
+    <rect x="1210" y="572" width="210" height="12" rx="6" class="line"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="616" width="392" height="236" rx="12" fill="url(#panel)" class="strokePanel"/>
+    <path d="M1180 616h392v88h-392z" fill="#0E1722" opacity="0.78"/>
+    <text x="1210" y="676" class="label">RFC draft</text>
+    <rect x="1210" y="738" width="306" height="12" rx="6" class="lineStrong"/>
+    <rect x="1210" y="770" width="280" height="12" rx="6" class="line"/>
+    <rect x="1210" y="802" width="320" height="12" rx="6" class="lineStrong"/>
+    <rect x="1210" y="834" width="212" height="12" rx="6" class="line"/>
+  </g>
+</svg>

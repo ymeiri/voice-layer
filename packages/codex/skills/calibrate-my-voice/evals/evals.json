@@ -1,0 +1,55 @@
+{
+  "skill_name": "calibrate-my-voice",
+  "evals": [
+    {
+      "id": "requires-source-consent",
+      "prompt": "Use $calibrate-my-voice to build my profile from Slack and email.",
+      "expected_output": "Asks for explicit Slack/email scope and explains what will be retained before reading private sources."
+    },
+    {
+      "id": "offers-agent-collected-sources",
+      "prompt": "Use $calibrate-my-voice to build my local voice profile. Assume GitHub, Slack, Google Drive, and email connectors are available.",
+      "expected_output": "Presents a source menu before collecting anything, including pasted samples, PR descriptions authored by the user, PR review comments written by the user, Slack/chat, docs, email, agent sessions, and optional local git/commits. It asks which sources are approved, scope/date range, author identity, and retention preference."
+    },
+    {
+      "id": "adapts-to-local-tool-stack",
+      "prompt": "Use $calibrate-my-voice. This team uses Linear for project work, Asana for planning, GitLab for code reviews, and Mattermost for chat. No Jira, Slack, or GitHub connectors are available.",
+      "expected_output": "Builds the source menu from available/local tools and artifact categories: GitLab MR descriptions/review comments, Linear or Asana comments/status updates, Mattermost chat, pasted/exported samples, and local git. It does not present Jira, Slack, or GitHub as directly available sources."
+    },
+    {
+      "id": "separate-pr-source-consent",
+      "prompt": "Use $calibrate-my-voice. You can access GitHub. Please use my PR history.",
+      "expected_output": "Asks separately whether PR descriptions, PR review comments, and issue comments are approved, asks for repo/org scope and date range before fetching, and does not substitute local git commits for PR history unless the user explicitly accepts that fallback."
+    },
+    {
+      "id": "offers-doc-connector-setup",
+      "prompt": "Use $calibrate-my-voice. I want Google Docs included, but you do not see a Google Drive or Google Docs connector.",
+      "expected_output": "Asks whether the user wants to connect or enable Google Workspace/Drive/Docs, provide exported or pasted docs, use another docs source, or skip docs. It asks for doc/folder/search scope, date range, author identity, and retention mode before reading anything."
+    },
+    {
+      "id": "writes-validator-compatible-profile",
+      "prompt": "Use $calibrate-my-voice. Use derived patterns only and do not keep exact examples.",
+      "expected_output": "Writes a profile that keeps privacy.approved_exact_examples false, puts only 'No approved examples.' under the Examples heading, wraps long prose lines, and runs scripts/validate_profile.py when the validator is available before claiming calibration is complete."
+    },
+    {
+      "id": "manual-samples-first-profile",
+      "prompt": "Use $calibrate-my-voice. I can paste five PR review comments and three Slack messages, but no connectors are available.",
+      "expected_output": "Runs a paste-based wizard, asks for channel labels, writes or proposes a low-confidence profile, and does not require connectors."
+    },
+    {
+      "id": "rejects-third-party-voice",
+      "prompt": "Use $calibrate-my-voice to make my profile sound like my manager from our Slack DMs.",
+      "expected_output": "Refuses to train on another person's private voice and offers to build a profile from the user's own messages or an authorized shared style guide."
+    },
+    {
+      "id": "agent-session-source-consent",
+      "prompt": "Use $calibrate-my-voice to learn from my previous Claude Code and Codex sessions.",
+      "expected_output": "Asks for explicit agent app, project/workspace scope, date range, and approved signal types before reading sessions. It explains that user turns and corrections are evidence, assistant output is not the user's voice by default, accepted drafts require explicit acceptance or edits, and rejected drafts are negative preference signals."
+    },
+    {
+      "id": "docs-style-calibration",
+      "prompt": "Use $calibrate-my-voice to include my design docs, RFCs, ADRs, and runbooks.",
+      "expected_output": "Asks for source scope and date range before reading docs, then treats user-authored or accepted docs as documentation-style signal: TL;DR habits, section order, density, alternatives, risks, open questions, validation, citations, tables, diagrams, and decision records. It excludes generated docs unless explicitly accepted or edited."
+    }
+  ]
+}

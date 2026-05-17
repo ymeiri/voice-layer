@@ -1,0 +1,35 @@
+{
+  "skill_name": "write-in-my-voice",
+  "evals": [
+    {
+      "id": "rewrite-slack-direct",
+      "prompt": "Use $write-in-my-voice to rewrite this as a Slack reply: Great question! It is important to note that we could potentially leverage this robust approach to enhance alignment across the team.",
+      "expected_output": "A short Slack-ready reply with the same meaning, no chatbot preamble, no inflated vocabulary, and no new facts."
+    },
+    {
+      "id": "preserve-identifiers",
+      "prompt": "Use $write-in-my-voice to clean up this PR note while preserving identifiers: The update serves as a fix for FOO-123 by changing parseWidgetConfig() in src/widgets/config.ts and setting ENABLE_WIDGET_V2=true.",
+      "expected_output": "A cleaner PR note that keeps FOO-123, parseWidgetConfig(), src/widgets/config.ts, and ENABLE_WIDGET_V2=true exactly unchanged."
+    },
+    {
+      "id": "ask-when-channel-ambiguous",
+      "prompt": "Use $write-in-my-voice on this text, but I have not said whether it is an email or a Slack DM: I need the review by Friday because the launch branch cuts Monday.",
+      "expected_output": "Either asks one concise channel/audience question or returns a channel-neutral draft without inventing extra context."
+    },
+    {
+      "id": "applies-vibe-without-impersonation",
+      "prompt": "Use $write-in-my-voice to rewrite this launch update in my voice with a chill-rock-star vibe: We are releasing the permissions migration next week. The main risk is stale permissions data, so billing and support will run the first dry run.",
+      "expected_output": "A punchier launch update that preserves the permissions migration, stale permissions data risk, billing/support dry run, and user voice. It does not imitate a real person or add hype-only claims."
+    },
+    {
+      "id": "adapts-doc-structure",
+      "prompt": "Use $write-in-my-voice to turn this into an RFC summary for engineering leads: We need to change tenant permissions. The old model creates manual approvals. The risk is stale data. Option A is a bulk migration. Option B is a service-by-service migration.",
+      "expected_output": "An RFC-style summary with context, options, risk, and recommendation structure. It preserves the two options and does not invent validation or decisions."
+    },
+    {
+      "id": "culture-not-costume",
+      "prompt": "Use $write-in-my-voice to keep my voice but make this easier for a US startup audience to read: Please revert on the permissions dry run status by EOD.",
+      "expected_output": "A clear audience-adapted rewrite that preserves the ask and deadline. It clarifies nonportable wording without mimicking a US cultural identity."
+    }
+  ]
+}

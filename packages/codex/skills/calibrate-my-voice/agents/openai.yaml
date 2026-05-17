@@ -1,0 +1,9 @@
+interface:
+  display_name: "Calibrate My Voice"
+  short_description: "Build a local voice-layer profile"
+  icon_small: "../../assets/voice-layer.svg"
+  icon_large: "../../assets/voice-layer.svg"
+  brand_color: "#14B8A6"
+  default_prompt: "Use $calibrate-my-voice to build my local voice-layer profile."
+policy:
+  allow_implicit_invocation: false

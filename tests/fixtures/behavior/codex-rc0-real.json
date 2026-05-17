@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "agent": "codex",
+  "run_id": "rc0-2026-05-12",
+  "captured_at": "2026-05-12",
+  "outputs": [
+    {
+      "scenario_id": "write.no-feature-flag-inference",
+      "output": "Title: [widgets] FOO-123 fix parseWidgetConfig\n\nWhy\n\nFixes FOO-123.\n\nWhat\n\n- Updated parseWidgetConfig() in src/widgets/config.ts.\n- New behavior is gated on ENABLE_WIDGET_V2=true.\n\nTesting\n\n- npm test -- widgets/config.test.ts\n\nReferences\n\n- FOO-123"
+    }
+  ]
+}

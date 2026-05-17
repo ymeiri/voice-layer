@@ -1,0 +1,25 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python3 -m py_compile scripts/install.py scripts/validate_repo.py scripts/validate_profile.py scripts/sync_core.py scripts/evaluate_behavior.py scripts/evaluate_examples.py scripts/check_no_silent_telemetry.py
+      - run: python3 scripts/validate_repo.py
+      - run: python3 scripts/sync_core.py --check
+      - run: python3 scripts/check_no_silent_telemetry.py
+      - run: ./voice-layer --version
+      - run: ./voice-layer install --agent both --dry-run
+      - run: ./voice-layer validate-profile --quiet tests/fixtures/profiles/valid-profile.md
+      - run: python3 scripts/evaluate_examples.py
+      - run: python3 scripts/evaluate_behavior.py
+      - run: python3 scripts/validate_release_archive.py
+      - run: python3 -m unittest discover -s tests

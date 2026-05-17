@@ -1,0 +1,42 @@
+{
+  "current_schema_version": "1.0",
+  "supported_schema_versions": ["1.0"],
+  "required_frontmatter": [
+    "schema_version",
+    "profile_subject",
+    "profile_name",
+    "language",
+    "updated_at",
+    "calibrated_by",
+    "source_summary",
+    "confidence",
+    "privacy",
+    "limitations"
+  ],
+  "valid_profile_subjects": ["self", "synthetic_archetype", "style_reference"],
+  "valid_confidence": ["low", "medium", "high"],
+  "source_required_keys": ["source", "scope", "date_range", "sample_count", "retention"],
+  "allowed_retention": ["derived-patterns", "short-approved-examples"],
+  "privacy_required_keys": ["raw_samples_retained", "approved_exact_examples"],
+  "required_headings": [
+    "## Summary",
+    "## Global voice",
+    "## Channel profiles",
+    "## Documentation style",
+    "## Openings and closings",
+    "## Sentence architecture",
+    "## Punctuation and formatting",
+    "## Punctuation texture",
+    "## Hedging and uncertainty",
+    "## Pushback and disagreement",
+    "## Recurring phrases",
+    "## Vocabulary fingerprint",
+    "## Vibes",
+    "## Audience adaptation",
+    "## Cultural and language baseline",
+    "## Agent-session signals",
+    "## Aversions",
+    "## Examples",
+    "## Calibration notes"
+  ]
+}

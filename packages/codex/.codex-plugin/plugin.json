@@ -1,0 +1,28 @@
+{
+  "name": "voice-layer",
+  "version": "0.1.0",
+  "description": "Write, rewrite, and calibrate user-facing text with a local voice-layer profile.",
+  "author": {
+    "name": "Yuval Meiri"
+  },
+  "license": "MIT",
+  "keywords": ["agent-skills", "writing", "voice", "voice-layer", "codex", "claude"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Voice Layer",
+    "shortDescription": "Write with voice, vibe, and audience.",
+    "longDescription": "Local-first Agent Skills for rewriting user-facing text with a calibrated voice-layer profile: personal voice, channel shape, audience adaptation, requested vibe, documentation style, and consent-first calibration from approved samples.",
+    "developerName": "Yuval Meiri",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Use $write-in-my-voice to rewrite this Slack reply.",
+      "Use $calibrate-my-voice to build my voice-layer profile.",
+      "Use $write-in-my-voice to make this PR description sound like me with a corporate-friendly vibe."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/voice-layer.svg",
+    "logo": "./assets/voice-layer.svg",
+    "screenshots": []
+  }
+}

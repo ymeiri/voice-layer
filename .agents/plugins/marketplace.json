@@ -1,0 +1,20 @@
+{
+  "name": "voice-layer",
+  "interface": {
+    "displayName": "Voice Layer"
+  },
+  "plugins": [
+    {
+      "name": "voice-layer",
+      "source": {
+        "source": "local",
+        "path": "./packages/codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

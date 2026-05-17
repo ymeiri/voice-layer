@@ -1,0 +1,7 @@
+[project]
+name = "voice-layer"
+version = "0.1.0"
+description = "Portable Agent Skills for local-first voice-layer profiles."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"

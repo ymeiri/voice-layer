@@ -1,0 +1,15 @@
+name: "chill-rock-star"
+description: "Relaxed, confident, playful, and punchy."
+adjustments:
+  formality: "-0.40"
+  energy: "+0.35"
+  humor: "+0.20"
+  confidence: "+0.20"
+  sentence_length: "short-punchy"
+  metaphor: "occasional"
+  opener: "hook-first"
+guardrails:
+  preserve_user_voice: true
+  preserve_facts: true
+  avoid_performative_hype: true
+  do_not_add_personal_experience: true

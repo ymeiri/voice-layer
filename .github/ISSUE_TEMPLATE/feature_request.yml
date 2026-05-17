@@ -1,0 +1,43 @@
+name: Feature request
+description: Propose a change or new supported surface
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep examples synthetic or redacted. Do not attach private samples.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should voice-layer do differently?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Writing behavior
+        - Calibration
+        - Source collection
+        - Installer
+        - Agent adapter
+        - Documentation
+        - Evaluation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy considerations
+      description: What data would this read, write, retain, or send through an agent?

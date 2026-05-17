@@ -1,0 +1,9 @@
+interface:
+  display_name: "Write In My Voice"
+  short_description: "Draft with voice, vibe, and audience"
+  icon_small: "../../assets/voice-layer.svg"
+  icon_large: "../../assets/voice-layer.svg"
+  brand_color: "#14B8A6"
+  default_prompt: "Use $write-in-my-voice to rewrite this in my voice with a corporate-friendly vibe."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+# Notices
+
+The AI writing tell taxonomy in this repository is an original project artifact
+informed by broad public discussion of AI writing patterns. This repository does
+not vendor code or datasets from external humanizer projects.
+
+This repository does not include a real user's voice samples. Generated `voice-profile.md` files are personal configuration and should not be committed.

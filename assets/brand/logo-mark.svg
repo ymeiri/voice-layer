@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150" role="img" aria-labelledby="title desc">
+  <title id="title">voice-layer mark</title>
+  <desc id="desc">Abstract layered text transformation mark for voice-layer.</desc>
+  <defs>
+    <linearGradient id="voiceLayerAccent" x1="150" y1="18" x2="232" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 34h47c18 0 29 9 38 27l32 63" stroke="#94A3B8" stroke-width="8"/>
+    <path d="M24 53h40c17 0 27 9 35 25l23 46" stroke="#94A3B8" stroke-width="8"/>
+    <path d="M24 72h34c15 0 24 8 31 22l15 30" stroke="#94A3B8" stroke-width="8"/>
+    <path d="M24 91h27c13 0 21 7 27 19l7 14" stroke="#94A3B8" stroke-width="8"/>
+
+    <path d="M92 24l50 102" stroke="#0B0F14" stroke-width="10"/>
+    <path d="M121 24l34 69" stroke="#0B0F14" stroke-width="10"/>
+    <path d="M151 24l17 35" stroke="#0B0F14" stroke-width="10"/>
+
+    <path d="M176 124l45-96" stroke="url(#voiceLayerAccent)" stroke-width="10"/>
+    <path d="M198 81h35" stroke="url(#voiceLayerAccent)" stroke-width="8"/>
+    <path d="M187 101h47" stroke="url(#voiceLayerAccent)" stroke-width="8"/>
+    <path d="M177 121h52" stroke="url(#voiceLayerAccent)" stroke-width="8"/>
+  </g>
+</svg>

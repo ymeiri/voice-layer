@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local agent permissions and workspace settings.
+.claude/settings.local.json
+
+# Personal calibration output and raw samples.
+voice-profile.md
+*.voice-profile.md
+.voice-layer-samples/
+.humanize-samples/
+calibration-samples/
+sample-exports/
+evals/behavior/runs/*
+!evals/behavior/runs/README.md
+packaging/homebrew/dist/
+*-command-message*.txt
+claude-session-*.txt

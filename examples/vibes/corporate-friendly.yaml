@@ -1,0 +1,15 @@
+name: "corporate-friendly"
+description: "Warm, polished, low-risk, and clear."
+adjustments:
+  formality: "+0.25"
+  warmth: "+0.15"
+  slang: "-0.40"
+  humor: "-0.30"
+  certainty: "measured"
+  sentence_length: "medium"
+  opener: "context-first"
+  closer: "clear-next-step"
+guardrails:
+  preserve_user_voice: true
+  avoid_generic_business_jargon: true
+  do_not_hide_risk: true

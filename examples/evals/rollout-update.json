@@ -1,0 +1,78 @@
+{
+  "name": "rollout-update",
+  "input": "inputs/rollout-update.md",
+  "ai_tell_phrases": [
+    "great question",
+    "it is important to note",
+    "excited to leverage",
+    "streamline onboarding",
+    "unlock significant value",
+    "seamless transition",
+    "moving forward"
+  ],
+  "common_required_any": [
+    ["permissions", "permission"],
+    ["onboarding"],
+    ["migration", "migrate"],
+    ["risk", "stale permission data", "stale permissions data"],
+    ["billing"],
+    ["support"]
+  ],
+  "common_forbidden": [
+    "risk-free",
+    "no issues",
+    "fully migrated",
+    "already migrated",
+    "all teams are ready",
+    "zero risk",
+    "guaranteed"
+  ],
+  "outputs": [
+    {
+      "path": "outputs/rollout-update.staff-engineer.md",
+      "required_all": [
+        "main risk",
+        "dry run",
+        "owner per service"
+      ],
+      "forbidden": [
+        "super excited",
+        "game-changing",
+        "next level"
+      ],
+      "max_em_dash": 0
+    },
+    {
+      "path": "outputs/rollout-update.diplomatic-manager.md",
+      "required_all": [
+        "careful migration",
+        "suggest",
+        "review the mismatches",
+        "decide whether to expand"
+      ],
+      "forbidden": [
+        "obviously",
+        "no-brainer",
+        "drag"
+      ],
+      "max_em_dash": 0
+    },
+    {
+      "path": "outputs/rollout-update.product-launcher-chill-rock-star.md",
+      "required_all": [
+        "ship path",
+        "drag out of onboarding",
+        "not pretend",
+        "one owner per service",
+        "move fast"
+      ],
+      "forbidden": [
+        "transformative",
+        "pivotal",
+        "super excited",
+        "next level"
+      ],
+      "max_em_dash": 0
+    }
+  ]
+}
