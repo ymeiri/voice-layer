@@ -1,7 +1,18 @@
 [project]
 name = "voice-layer"
 version = "0.1.0"
-description = "Portable Agent Skills for local-first voice-layer profiles."
+description = "Local-first Agent Skills that humanize AI drafts with personal voice profiles."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
+keywords = [
+  "agent-skills",
+  "ai-writing",
+  "claude-code",
+  "codex",
+  "humanize-ai",
+  "local-first",
+  "personalization",
+  "voice-profile",
+  "writing-assistant",
+]

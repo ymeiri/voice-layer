@@ -1,17 +1,30 @@
 {
   "name": "voice-layer",
   "version": "0.1.0",
-  "description": "Write, rewrite, and calibrate user-facing text with a local voice-layer profile.",
+  "description": "Write, rewrite, humanize, and calibrate user-facing text with a local voice-layer profile.",
   "author": {
     "name": "Yuval Meiri"
   },
   "license": "MIT",
-  "keywords": ["agent-skills", "writing", "voice", "voice-layer", "codex", "claude"],
+  "keywords": [
+    "agent-skills",
+    "ai-writing",
+    "claude",
+    "codex",
+    "humanize-ai",
+    "local-first",
+    "personalization",
+    "voice",
+    "voice-layer",
+    "voice-profile",
+    "writing",
+    "writing-assistant"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Voice Layer",
     "shortDescription": "Write with voice, vibe, and audience.",
-    "longDescription": "Local-first Agent Skills for rewriting user-facing text with a calibrated voice-layer profile: personal voice, channel shape, audience adaptation, requested vibe, documentation style, and consent-first calibration from approved samples.",
+    "longDescription": "Local-first Agent Skills for rewriting and humanizing AI-generated user-facing text with a calibrated voice-layer profile: personal voice, channel shape, audience adaptation, requested vibe, documentation style, and consent-first calibration from approved samples.",
     "developerName": "Yuval Meiri",
     "category": "Productivity",
     "capabilities": ["Interactive", "Read", "Write"],

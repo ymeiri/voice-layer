@@ -9,8 +9,8 @@ A local-first personal voice layer for AI agents.
 Bring your voice to any agent.
 Adapt to any audience without losing yourself.
 
-Turn generic AI drafts into calibrated PR comments, Slack replies, docs, RFCs,
-and emails.
+Humanize AI-generated drafts by rewriting them in your own calibrated voice:
+PR comments, Slack replies, docs, RFCs, and emails.
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![Agents: Claude Code + Codex](https://img.shields.io/badge/agents-Claude%20Code%20%2B%20Codex-blue)
@@ -21,7 +21,8 @@ and emails.
 
 `voice-layer` gives Claude Code and Codex a reusable local profile for writing
 like you: direct where you are direct, careful where you are careful, and shaped
-for the channel without flattening into generic AI prose.
+for the channel without flattening into generic AI prose. It is a local-first AI
+writing assistant for personal voice, not a generic humanizer prompt.
 
 ![voice-layer local rewrite flow](assets/brand/readme-hero.svg)
 
@@ -87,6 +88,8 @@ Why this is not just a prompt:
   get different shapes from the same facts.
 - **AI-tell cleanup:** repeated model phrasing, filler, and punctuation tells
   are explicitly checked.
+- **Not detector bypass:** voice-layer is for authentic personal communication,
+  not evading AI detectors or hiding provenance.
 - **CI privacy guard:** executable repo code is scanned for silent
   network/telemetry paths.
 
@@ -100,6 +103,10 @@ depends on voice, channel, audience, context, document shape, and boundaries. A
 message can be more corporate-friendly, more direct, or easier for a different
 audience to read without erasing the person who wrote it. A design doc can also
 keep the user's structure, depth, risk framing, and decision style.
+
+If you are searching for an AI text humanizer, `voice-layer` is the stricter
+version of that idea: it humanizes AI-written text by applying an explicit,
+auditable voice profile that you control.
 
 `voice-layer` treats style as a portable profile:
 
@@ -285,6 +292,10 @@ Voice is portable. Culture is not a costume.
 
 This repo does not include a hosted service, telemetry, or personal samples.
 CI runs a static no-silent-telemetry guard over executable repo code:
+
+`voice-layer` is not an AI detector bypass tool. It is meant to help users
+communicate honestly in their own style, with local profile data they can
+inspect and delete.
 
 ```sh
 python3 scripts/check_no_silent_telemetry.py

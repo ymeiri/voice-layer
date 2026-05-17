@@ -1,6 +1,6 @@
 {
   "name": "voice-layer",
-  "description": "Write, rewrite, and calibrate user-facing text with a local voice-layer profile.",
+  "description": "Write, rewrite, humanize, and calibrate user-facing text with a local voice-layer profile.",
   "version": "0.1.0",
   "author": {
     "name": "Yuval Meiri"

@@ -3,12 +3,12 @@
   "owner": {
     "name": "Yuval Meiri"
   },
-  "description": "Local-first voice-layer skills for Claude Code.",
+  "description": "Local-first voice-layer skills that humanize AI drafts with a personal voice profile.",
   "plugins": [
     {
       "name": "voice-layer",
       "source": "./packages/claude-code",
-      "description": "Write, rewrite, and calibrate text with a local voice-layer profile."
+      "description": "Write, rewrite, humanize, and calibrate text with a local voice-layer profile."
     }
   ]
 }

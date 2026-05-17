@@ -14,7 +14,15 @@
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
       },
-      "category": "Productivity"
+      "category": "Productivity",
+      "keywords": [
+        "agent-skills",
+        "ai-writing",
+        "humanize-ai",
+        "personalization",
+        "voice-profile",
+        "writing-assistant"
+      ]
     }
   ]
 }
