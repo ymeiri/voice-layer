@@ -1,7 +1,7 @@
 # voice-layer
 
 <p align="center">
-  <img src="assets/brand/logo.svg" alt="voice-layer" width="420">
+  <img src="assets/brand/logo.png" alt="voice-layer" width="360">
 </p>
 
 A local-first personal voice layer for AI agents.

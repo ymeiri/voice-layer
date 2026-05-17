@@ -5,8 +5,10 @@ through a local profile layer and comes out as channel-shaped writing.
 
 ## Shipped Assets
 
+- `assets/brand/logo.png` is the README logo selected from Nano Banana /
+  Gemini exploration board option #7.
 - `assets/brand/logo.svg`, `logo-mark.svg`, and `logo-dark.svg` are maintained
-  SVG assets for the project.
+  SVG assets kept for package/icon compatibility.
 - `assets/brand/readme-hero.svg` is a hand-authored README diagram.
 - `assets/brand/readme-hero.png`, `social-preview.png`, and
   `demo-thumbnail.png` are rendered derivatives of the project hero asset.
