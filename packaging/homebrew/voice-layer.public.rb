@@ -2,9 +2,9 @@ class VoiceLayer < Formula
   desc "Local-first writing voice profiles for AI agents"
   homepage "https://github.com/ymeiri/voice-layer"
   url "https://github.com/ymeiri/voice-layer/releases/download/v0.1.0/voice-layer-0.1.0.tar.gz"
+  version "0.1.0"
   sha256 "__REPLACE_WITH_RELEASE_SHA256__"
   license "MIT"
-  version "0.1.0"
 
   depends_on "python@3.11"
 

@@ -94,12 +94,13 @@ Delete local profile data only with an explicit purge:
 
 Use this when you want the native Codex plugin browser and update path.
 
-Codex reads repo marketplaces from `.agents/plugins/marketplace.json`. That
-marketplace points at `packages/codex`. Open this repo in Codex or restart
-Codex after cloning it, then run `/plugins`, select the `Voice Layer`
-marketplace, and install `voice-layer`.
+Codex reads repo marketplaces from `.agents/plugins/marketplace.json`. The
+public marketplace can be added from `ymeiri/voice-layer` and points at
+`packages/codex`. Open Codex, run `/plugins`, add the `ymeiri/voice-layer`
+marketplace if needed, select `Voice Layer`, and install `voice-layer`.
 
-If Codex does not show the marketplace, use the direct CLI below and run `./voice-layer doctor --agent codex`.
+If Codex does not show the marketplace, use the direct CLI below and run
+`voice-layer doctor --agent codex`.
 
 Start a new thread after installing, then test:
 
@@ -114,7 +115,7 @@ Use this when you want Claude Code's native plugin manager and namespaced skills
 From Claude Code, add this repo as a marketplace and install the plugin:
 
 ```text
-/plugin marketplace add .
+/plugin marketplace add ymeiri/voice-layer
 /plugin install voice-layer@voice-layer
 ```
 

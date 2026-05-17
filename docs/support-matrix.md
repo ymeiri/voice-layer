@@ -20,9 +20,9 @@ This page is the support boundary for the current repo.
 | Surface | Level | Install path | Verified now | Remaining gap |
 | --- | --- | --- | --- | --- |
 | Claude Code direct skills | Supported | `./voice-layer install --agent claude` installs from `packages/claude-code` into `~/.claude/skills` | Temp-HOME install, doctor, uninstall, purge, RC-0 fresh calibration, and RC-0 write smoke test | Keep RC-0 fixtures passing as behavior evolves |
-| Claude Code plugin | Release candidate | `/plugin marketplace add .` then `/plugin install voice-layer@voice-layer` from `packages/claude-code` | `claude plugin validate .` passes | Fresh Claude Code plugin install and invocation test |
+| Claude Code plugin | Supported | `/plugin marketplace add ymeiri/voice-layer` then `/plugin install voice-layer@voice-layer` from `packages/claude-code` | Public marketplace add, install, `claude plugin validate .`, and `/voice-layer:write-in-my-voice` invocation pass | Keep namespaced invocation smoke test in release checklist |
 | Codex direct skills | Supported | `./voice-layer install --agent codex` installs from `packages/codex` into `~/.agents/skills` | Temp-HOME install, doctor, uninstall, purge, and RC-0 write smoke test | Keep RC-0 fixtures passing as behavior evolves |
-| Codex plugin | Release candidate | Codex plugin marketplace metadata points at `packages/codex` | Repo validator checks marketplace and plugin metadata | Fresh Codex plugin UI install test |
+| Codex plugin | Release candidate | Codex plugin marketplace metadata points at `packages/codex`; CLI marketplace add/upgrade works with `ymeiri/voice-layer` | Repo validator checks marketplace/plugin metadata; `codex plugin marketplace add ymeiri/voice-layer` and upgrade pass | Fresh Codex desktop plugin UI install test |
 | ChatGPT Skills / API | Experimental | None yet | Profile model is portable in principle | Package/upload path and runtime behavior not verified |
 | Cursor | Not supported | None | Cursor can be a calibration source if the user provides approved session exports | Cursor package format, invocation behavior, and validation are not verified |
 | Windsurf / Continue / other agents | Not supported | None | They can be calibration sources if the user provides approved exports | No package, install, or invocation behavior verified |

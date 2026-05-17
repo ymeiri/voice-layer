@@ -16,6 +16,8 @@ and emails.
 ![Agents: Claude Code + Codex](https://img.shields.io/badge/agents-Claude%20Code%20%2B%20Codex-blue)
 ![Local-first: no telemetry](https://img.shields.io/badge/local--first-no%20telemetry-black)
 ![Python: 3.11+](https://img.shields.io/badge/python-3.11%2B-3776AB)
+[![CI](https://github.com/ymeiri/voice-layer/actions/workflows/ci.yml/badge.svg)](https://github.com/ymeiri/voice-layer/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/ymeiri/voice-layer)](https://github.com/ymeiri/voice-layer/releases)
 
 `voice-layer` gives Claude Code and Codex a reusable local profile for writing
 like you: direct where you are direct, careful where you are careful, and shaped
@@ -33,7 +35,7 @@ The demo uses only the synthetic profile in this repo.
 
 ## Install
 
-Homebrew install after the first public release:
+Homebrew install:
 
 ```sh
 brew tap ymeiri/voice-layer
